@@ -1,0 +1,8 @@
+{
+  "name": "bragdoc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:wommy/bragdoc.git",
+  "author": "wommy <tom@technomad.media>",
+  "license": "MIT"
+}
