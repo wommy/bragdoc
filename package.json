@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:wommy/bragdoc.git",
   "author": "wommy <tom@technomad.media>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0-beta.8"
+  }
 }
