@@ -5,6 +5,10 @@
   "repository": "git@github.com:wommy/bragdoc.git",
   "author": "wommy <tom@technomad.media>",
   "license": "MIT",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve --incremental"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0-beta.8"
   }
