@@ -6,10 +6,15 @@
   "author": "wommy <tom@technomad.media>",
   "license": "MIT",
   "scripts": {
+    "css": "postcss src/style/post.css -o src/components/style.css",
     "build": "eleventy",
     "start": "eleventy --serve --incremental"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0-beta.8"
+    "@11ty/eleventy": "^1.0.0-beta.8",
+    "autoprefixer": "^10.4.1",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.8"
   }
 }
