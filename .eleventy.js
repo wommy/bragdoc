@@ -7,6 +7,9 @@ module.exports = function(c) {
 		.DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("dd LLL yyyy")
 	)
 
+		// To Support .yaml Extension in _data
+	c.addDataExtension("yml", contents => require('js-yaml').safeLoad(contents) )
+
 	return {
 		dir: {
 			input: 'src',
