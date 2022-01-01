@@ -1,3 +1,21 @@
 @tailwind base;
+@layer base {
+	h2, h3 {
+		line-height: 1.3;
+		@apply font-bold;
+	}
+	a:not([class]) {
+		@apply underline;
+	  text-decoration-skip-ink: auto;
+	}
+}
 @tailwind utilities;
+@layer utilities {
+	.flow > * + * {
+		margin-top: 1em;
+	}
+}
 @tailwind components;
+@layer components {
+
+}

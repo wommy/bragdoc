@@ -2,4 +2,27 @@
 layout: base
 title: wommy
 ---
-<p>workin</p>
+<header>
+	<h1>brags</h1>
+	<a href="#edit">edit</a>
+</header>
+<main class="flow">
+	<header class="profile | flow">
+		<div>img</div>
+		<h2>name</h2>
+		<div>bio</div>
+	</header>
+	<ul class="flow">
+		{% for brag in collections.brag | reverse %}
+		<li>
+			<div class="marker"></div>
+			<article>
+				<time datetime="{{ brag.data.date }}">{{ brag.data.date | displayDate }}</time>
+				<h3>{{ brag.data.title }}</h3>
+				<section>{{ brag.templateContent | safe }}</section>
+			</article>
+		</li>
+		{% endfor %}
+	</ul>
+	<footer>footer</footer>
+</main>
