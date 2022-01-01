@@ -10,6 +10,9 @@ module.exports = function(c) {
 		// To Support .yaml Extension in _data
 	c.addDataExtension("yml", contents => require('js-yaml').safeLoad(contents) )
 
+		// Copy Static Files to /_Site
+	c.addPassthroughCopy({ "./src/admin/config.yml": "./admin/config.yml" })
+
 	return {
 		dir: {
 			input: 'src',
